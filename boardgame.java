@@ -1,13 +1,14 @@
 
 public class BoardGames(){
   //Variables
-  //Type of board
-  
-  //board variable
-  //numOfPeices
-  //pieces
-  
+  private int numOfPlaceMarkers;
+  private String shapeOfBoard;
+  private int lengthOfBoard;
   public BoardGames(){
     
   }
+  
+  public void setBhaldasdaw
 }
+
+  No u :)
