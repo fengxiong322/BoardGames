@@ -1,10 +1,13 @@
 
 public class BoardGames(){
   //Variables
-  //asdasdasd
+  //Type of board
+  
+  //board variable
+  //numOfPeices
+  //pieces
+  
   public BoardGames(){
     
   }
 }
-
-  No u :)
