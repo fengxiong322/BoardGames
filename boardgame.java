@@ -38,4 +38,12 @@ public class BoardGames(){
   public void iterateTurns(){
   	turns++;
   }
+
+  public int getWidth(){
+  	return widthOfBoard;
+  }
+
+  public int getHeight(){
+  	return heightOfBoard;
+  }
 }
