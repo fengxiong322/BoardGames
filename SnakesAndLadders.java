@@ -120,11 +120,7 @@ public class SnakesAndLadders extends BoardGames{
     do{
       dice = rollDice();
       System.out.println("Turn number "+ sal.getTurns());
-      for(int i = 0; i<10; i++){
-        for(int j = 0; j<10; j++)
-          System.out.print(sal.board[i][j] + " ");
-        System.out.println();
-      }
+      sal.displayBoard();
       sal.iterateTurns();
       System.out.println("Player " + sal.getCurrentPlayer() + " has rolled a " + dice + "!");
     }while(!sal.move(dice));//While no one has won yet
