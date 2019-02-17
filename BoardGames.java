@@ -5,7 +5,7 @@ public class BoardGames{
   protected int pieces[][];//For each piece, x and y coords.
   private int heightOfBoard;//Number of positions on the y axis
   private int widthOfBoard;//Number of positions on the x axis
-  public int[][] board;//The full board. -1 means empty. any other number means the piece number(FOR DISPLAY)
+  protected int[][] board;//The full board. -1 means empty. any other number means the piece number(FOR DISPLAY)
   private int turns;
 
   public BoardGames(String name, int heightOfBoard, int widthOfBoard, int numOfPieces){
@@ -52,5 +52,13 @@ public class BoardGames{
 
   public int getHeight(){
   	return heightOfBoard;
+  }
+  
+  public void displayBoard(){
+    for(int i = 0; i<10; i++){
+      for(int j = 0; j<10; j++)
+        System.out.print(sal.board[i][j] + " ");
+      System.out.println();
+    }
   }
 }
