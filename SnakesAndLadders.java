@@ -95,7 +95,7 @@ public class SnakesAndLadders extends BoardGames {
 	}
 
 	/** 
-	 * 
+	 *A helper method to move the pieces around the board 
 	 */
 	private void moveOnce() {
 		if (pieces[currentPlayer][1] % 2 == 0) {
