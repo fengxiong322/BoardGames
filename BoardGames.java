@@ -170,33 +170,13 @@ public class BoardGames {
 
 	/**
 	 * Prints an array to display the board Since the board is positioned
-	 * incorrectly, I need to rotate it 90 degrees counter clockwise before printing
-	 * it
 	 */
 	public void displayBoard() {
-		int[][] rotatedBoard = new int[10][10];
-		for (int i = 0; i < 10; i++) {
-			for (int j = 0; j < 10; j++)
-				rotatedBoard[i][j] = board[i][j];
-		}
-		// Rotating 90 clockwise found from:
-		// https://www.emanueleferonato.com/2012/11/07/how-to-rotate-a-two-dimensional-array-by-90-degrees-clockwise-or-counter-clockwise-like-knightfall-game/
-		int n = rotatedBoard.length;
-		for (int i = 0; i < n / 2; i++) {
-			for (int j = i; j < n - i - 1; j++) {
-				int temp = rotatedBoard[i][j];
-				rotatedBoard[i][j] = rotatedBoard[j][n - i - 1];
-				rotatedBoard[j][n - i - 1] = rotatedBoard[n - i - 1][n - j - 1];
-				rotatedBoard[n - i - 1][n - j - 1] = rotatedBoard[n - j - 1][i];
-				rotatedBoard[n - j - 1][i] = temp;
-			}
-		}
-
-		for (int i = 0; i < 10; i++) {
-			for (int j = 0; j < 10; j++)
-				System.out.print(rotatedBoard[i][j] + " ");
-			System.out.println();
-		}
+                for (int j = 9; j >=0; j--){
+                        for (int i = 0; i <10; i++)
+                                System.out.print(board[i][j] + " ");
+                        System.out.println();
+                }
 	}
 
 	/**
