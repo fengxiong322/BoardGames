@@ -10,6 +10,14 @@ public class SnakesAndLadders extends BoardGames {
 	private int[][] ladders;
 	private int numSnakes;
 	private int numLadders;
+	
+	public void setNumSnakes(int nSnaks) {
+		numSnakes = nSnaks;
+	}
+
+	public void setNumLadders(int nLadders) {
+		numLadders = nLadders;
+	}
 
 	public int getNumSnakes() {
 		return numSnakes;
