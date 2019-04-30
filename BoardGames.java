@@ -1,5 +1,5 @@
 
-/package lesson2;
+package lesson2;
 
 /**
  * This class represents a generic board game
